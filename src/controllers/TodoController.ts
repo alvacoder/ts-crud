@@ -9,3 +9,7 @@ export const createTodo: RequestHandler = (req, res, next) => {
 
     res.status(201).send({message: 'created new todo', data: newTodo});
 }
+
+export const getTodos: RequestHandler = (req, res, next) => {
+    res.status(200).send({data: todos});
+}
